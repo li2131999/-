@@ -1,0 +1,102 @@
+/* 清除默认样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+input{
+    outline:none;
+    font-weight:bold;
+}
+button{
+    border:0;
+    outline: none;
+}
+.core{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*  */
+.top-618{
+    height: 30px;
+    background: #333;;
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+.top-618 .ul-618{
+    float:right ;
+}
+.top-618 .ul-618 li{
+    float:left ;
+    padding-left: 14px; 
+    line-height: 30px; 
+    font-size: 14px;
+}
+.top-618 .ul-618 .li-618:hover a{
+    color: #ff0000;
+}
+/* 搜索 */
+.search{
+    height: 105px;
+    box-sizing: border-box;
+    
+}
+.search .log{
+    width: 332px;
+    height: 26px;
+    float: left;
+    background: url(../img-618/logo.png) no-repeat;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+.search .inp .text{
+    margin-top: 40px;
+    width: 395px;
+    height: 32px;
+    border: 1px solid blue;
+    border-right:0; 
+    float: left;
+    
+}
+.search .inp .btn{
+    background: blue;
+    width: 90px;
+    height: 34px;
+    float: left;
+    margin-top: 40px;
+   
+}
+.search .vehicle{
+    width:162px ;
+    height: 34px;
+    border: 1px solid gray;
+    float:right;
+    text-align: center;
+    line-height: 34px;
+    margin-top:37px; 
+}
+.search .vehicle:hover{
+    border:1px solid blue; 
+}
+/* 中心 */
+.center{
+    width: 1519px;
+    height: 689px;
+    background: url(../img-618/cen618.jpg) no-repeat;
+    background-position:center center;
+}
+.center p img{
+    width: 100%;
+}
+/* 导航 */
+.nav{
+    height: 67px;
+    background: yellow;
+}
