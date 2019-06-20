@@ -18,7 +18,10 @@
                 <li><a href="">个人中心</a></li>
                 <li><a href="">合作渠道</a></li>
                 <li><a href="">帮助中心</a></li>
-                <li><a href="">手机版</a></li>
+                <li class="download">
+                    <a href="">手机版</a>
+                    <span><img src="./img-618/rwm618.jpg" alt=""></span>
+                </li>
             </ul>
         </div>
     </div>
@@ -34,11 +37,52 @@
     </div>
     <div class="center">
     </div>
-    <p class="nav">
+    <div id="nav">
         <div class="core">
-
+        <ul class="nav-ul">
+            <li><a href="">领劵专区</a></li>
+            <li><a href="">限时秒杀</a></li>
+            <li><a href="">新品促销</a></li>
+            <li><a href="">热卖推荐</a></li>
+        </ul>
         </div>
-    </p>
+    </div>
+    <div class="ljzx">
+        <div class="core">
+        <img src="./img-618/ljzx.jpg" alt="" srcset="">
+        <span><img src="./img-618/j1.jpg" alt="" srcset=""></span>
+        <span><img src="./img-618/j2.jpg" alt="" srcset=""></span>
+        <span><img src="./img-618/j3.jpg" alt="" srcset=""></span>
+        <span><img src="./img-618/j4.jpg" alt="" srcset=""></span>
+        <img src="./img-618/xsms.jpg" alt="" srcset="">
+        <div class="miaosha">
+            <a href="https://www.lemall.com/product/products-pid-MLHH000012-n-11074.html"><img src="./img-618/miao.jpg" alt="" srcset=""></a>
+        </div>
+        <img src="./img-618/xpcx.jpg" alt="" srcset="">
+        </div>
+    </div>
+    <div class="core">
+    <div class="xpcx">
+        <span>
+            <img src="./img-618/d1.jpg" alt="" srcset="">
+            <h3>YH3</h3>
+        </span>
+    </div>
+    </div>
 </body>
 
 </html>
+<script>
+    var div = document.getElementById("nav")
+    var nav = div.offsetTop;
+    console.log(nav)
+    window.onscroll = function () {
+        var x = document.documentElement.scrollTop;
+        console.log(x)
+        if (nav < x) {
+            div.className = "nav";
+        } else {
+            div.className = "";
+        }
+    }
+</script>
