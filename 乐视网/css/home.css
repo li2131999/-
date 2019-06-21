@@ -1,7 +1,203 @@
-*{
+/* 清除默认样式 */
+* {
     margin: 0;
     padding: 0;
 }
-.Promotion-618 img{
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+input {
+    outline: none;
+    font-weight: bold;
+}
+
+button {
+    border: 0;
+    outline: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* 版心 */
+.core {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.Promotion-618 img {
     width: 100%;
+}
+
+/* 头部 */
+.top-head {
+    width: 100%;
+    height: 32px;
+    background: #333;
+}
+
+.top-head li a {
+    font-size: 14px;
+}
+
+.top-head .top-left li {
+    float: left;
+    line-height: 32px;
+}
+
+.top-head .top-right li {
+    float: left;
+    line-height: 32px;
+}
+
+.top-head .top-right {
+    float: right;
+}
+
+/* 左边 */
+.top-head .denlu {
+    margin-left: 20px;
+}
+
+.top-head .top-left .zuce {
+    margin-left: 5px;
+}
+
+.top-head .denlu span {
+    color: #f2f2f2;
+}
+
+.top-head .top-left li:hover a {
+    color: #2884c7;
+}
+
+/* 右边 */
+.top-head .top-right li {
+    margin-left: 20px;
+}
+
+.top-head .top-right li:hover a {
+    color: #2884c7;
+}
+
+/* 鼠标滑过选项 */
+.top-head .top-right .hover1 p {
+    position: absolute;
+    font-size: 14px;
+    display: none;
+    background: #f2f2f2;
+}
+
+.top-head .top-right .hover1:hover p {
+    display: block;
+    color: #2884C7;
+}
+
+.top-head .top-right .hover1:hover {
+    background: #f2f2f2;
+}
+
+/* hover2 */
+.top-head .top-right .hover2 div{
+    position: absolute;
+    display: none;
+    font-size: 14px;
+    background: #f2f2f2;
+    z-index:0
+}
+
+.top-head .top-right .hover2:hover div{
+    display: block;
+    color: #2884C7;
+}
+
+.top-head .top-right .hover2:hover {
+    background: #f2f2f2;
+}
+
+/* hover3 */
+.top-head .top-right .hover3 p {
+    position: absolute;
+    display: none;
+    background: #f2f2f2;
+}
+
+.top-head .top-right .hover3:hover p {
+    display: block;
+
+}
+
+/* 搜素 */
+.sousuo {
+    width: 100%;
+    height: 120px;
+    background: aqua;
+}
+
+.sousuo p {
+    width: 330px;
+    height: 120px;
+    background: #f2f2f2;
+    float: left;
+    clear: both;
+}
+.sousuo .ipt .txt{
+    box-sizing: border-box;
+    float: left;
+    width: 446px;
+    height: 40px;
+    margin-top: 32px;
+    margin-left: 40px;
+    border: 2px solid #2884C7;
+    padding-left: 10px;
+    color: darkgrey;
+}
+.sousuo .ipt .btn{
+    float: left;
+    width: 134px;
+    height: 40px;
+    margin-top: 32px;
+    background: #2884C7;
+    border: 0;
+}
+.sousuo .gouwu{
+    width: 166px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border:1px solid black;
+    float: right; 
+    margin-top:32px ;
+    color: #2884c7;
+}
+.sousuo .gouwu:hover{
+    background: #2884C7;
+    color: #f2f2f2;
+}
+.sousuo .ipt{
+    position: relative;
+}
+.sousuo .ipt .txt-box{
+    box-sizing: border-box;
+    width: 444px;
+    height: 180px;
+    border: #333 1px solid;
+    position: absolute;
+    top: 72px;
+    left: 370px;
+    display: none;
+    z-index: 1;
+}
+.center{
+    height: 200px;
+    width: 100%;
+    background: blanchedalmond;
 }
