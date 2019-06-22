@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .core {
+            width: 1440px;
+            margin: 0 auto;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        input {
+            outline: none;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        button {
+            border: 0;
+            outline: none;
+        }
+
+        p img {
+            width: 100%;
+            position: relative;
+            height: 483px;
+        }
+
+        .logo img {
+            width: 142px;
+            height: 47px;
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+
+        .inp {
+            width: 430px;
+            height: 460px;
+            background: aliceblue;
+            border: 1px solid #cccccc;
+            position: absolute;
+            right: 50px;
+            top: 110px;
+            text-align: center;
+        }
+
+        .inp input {
+            width: 380px;
+            height: 44px;
+            margin-top: 30px;
+        }
+
+        .inp button {
+            width: 380px;
+            height: 42px;
+            background: #009de6;
+            font-size: 18px;
+            border: 2px soli#009de6;
+            margin-top: 50px;
+        }
+
+        .inp button:hover {
+            background: #61b1ef;
+        }
+
+        .inp button span {
+            margin-right: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo"><img src="./img/denlulogo.png" alt=""></div>
+    <p><img src="./img/operatbg.jpg" alt=""></p>
+    <div class="inp">
+        <h4> <b>登录</b> </h4>
+        <input type="text" id="text"><br>
+        <input type="password"><br>
+        <button>
+            <span>登</span>
+            <span>录</span>
+        </button>
+    </div>
+</body>
+
+</html>
+<script src="./js/common1.js"></script>
+<script>
+    $id(text).onclink = function () {
+        alert("")
+    }
+</script>

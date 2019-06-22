@@ -106,15 +106,15 @@ img {
 }
 
 /* hover2 */
-.top-head .top-right .hover2 div{
+.top-head .top-right .hover2 div {
     position: absolute;
     display: none;
     font-size: 14px;
     background: #f2f2f2;
-    z-index:0
+    z-index: 0
 }
 
-.top-head .top-right .hover2:hover div{
+.top-head .top-right .hover2:hover div {
     display: block;
     color: #2884C7;
 }
@@ -139,17 +139,16 @@ img {
 .sousuo {
     width: 100%;
     height: 120px;
-    background: aqua;
 }
 
 .sousuo p {
     width: 330px;
     height: 120px;
-    background: #f2f2f2;
     float: left;
     clear: both;
 }
-.sousuo .ipt .txt{
+
+.sousuo .ipt .txt {
     box-sizing: border-box;
     float: left;
     width: 446px;
@@ -160,7 +159,8 @@ img {
     padding-left: 10px;
     color: darkgrey;
 }
-.sousuo .ipt .btn{
+
+.sousuo .ipt .btn {
     float: left;
     width: 134px;
     height: 40px;
@@ -168,36 +168,92 @@ img {
     background: #2884C7;
     border: 0;
 }
-.sousuo .gouwu{
+
+.sousuo .gouwu {
     width: 166px;
     height: 40px;
     text-align: center;
     line-height: 40px;
-    border:1px solid black;
-    float: right; 
-    margin-top:32px ;
+    border: 1px solid black;
+    float: right;
+    margin-top: 32px;
     color: #2884c7;
 }
-.sousuo .gouwu:hover{
+
+.sousuo .gouwu:hover {
     background: #2884C7;
     color: #f2f2f2;
 }
-.sousuo .ipt{
+
+.sousuo .ipt {
     position: relative;
 }
-.sousuo .ipt .txt-box{
+
+.sousuo .ipt .txt-box {
     box-sizing: border-box;
     width: 444px;
     height: 180px;
-    border: #333 1px solid;
+    border: #cccccc 1px solid;
     position: absolute;
     top: 72px;
     left: 370px;
     display: none;
     z-index: 1;
+    background: #ffffff;
+    ;
 }
-.center{
-    height: 200px;
+
+.center img {
+    width: 1196px;
+    height: 420px;
+}
+
+.center {
+    width: 1196px;
+    height: 420px;
+    background: #2884c7;
+    margin: 0 auto;
+    position: relative;
+}
+
+.center #box {
     width: 100%;
-    background: blanchedalmond;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.center #box #box-ul {
+    width: 5000px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.center #box #box-ul li {
+    width: 1196px;
+    height: 420px;
+    float: left;
+}
+
+.center ol {
+    position: absolute;
+    bottom: 15px;
+    left: 35%;
+}
+
+.center ol li {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #2884c7;
+    float: left;
+    margin-left: 50px;
+    cursor: pointer;
+
+}
+.center ol li.yuan{
+    background: brown;
 }

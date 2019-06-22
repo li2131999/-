@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .core {
+            width: 1440px;
+            margin: 0 auto;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        input {
+            outline: none;
+            font-weight: bold;
+            padding-left: 45px;
+        }
+
+        button {
+            border: 0;
+            outline: none;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        /* 表单样式 */
+        p img {
+            width: 100%;
+            position: relative;
+            height: 483px;
+            margin-top: 10px;
+        }
+
+        .logo img {
+            width: 142px;
+            height: 47px;
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+
+        .inp {
+            width: 430px;
+            height: 460px;
+            background: #ffffff;
+            ;
+            border: 1px solid #cccccc;
+            position: absolute;
+            right: 50px;
+            top: 110px;
+            position: absolute;
+        }
+
+        .inp .zhuce {
+            display: inline-block;
+            font-size: 18px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        .inp .denlu {
+            display: inline-block;
+            font-size: 18px;
+            margin-top: 30px;
+            margin-left: 270px;
+        }
+
+        .inp .denlu a {
+            color: #009de6;
+            font-size: 14px;
+        }
+
+        .inp input {
+            width: 380px;
+            height: 44px;
+            box-sizing: border-box;
+            margin-left: 22px;
+            margin-top: 20px;
+        }
+
+        .inp #text3 {
+            width: 225px;
+        }
+
+        .inp #text3-btn {
+            box-sizing: content-box;
+            width: 130px;
+            height: 40px;
+            text-align: center;
+            padding-left: 0;
+            background: #ffffff;
+            border: 0;
+            outline: none;
+            border: #009de6 1px solid;
+
+        }
+
+        .inp button {
+            width: 380px;
+            height: 42px;
+            background: #009de6;
+            font-size: 18px;
+            border: 2px soli#009de6;
+            margin-top: 10px;
+            margin-left: 22px;
+        }
+
+        .inp button:hover {
+            background: #61b1ef;
+        }
+
+        .inp button span {
+            margin-right: 20px
+        }
+
+        .inp .suiji {
+            display: inline-block;
+            height: 43px;
+            width: 105px;
+            border: 1px burlywood solid;
+            position: absolute;
+            top: 234px;
+            right: 28px;
+            line-height: 43px;
+            font-size: 18px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .inp #t1 {
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 15px;
+            font-size: 12px;
+        }
+
+        #cbx {
+            width: 12px;
+            height: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo"><img src="./img/denlulogo.png" alt=""></div>
+    <p><img src="./img/operatbg.jpg" alt=""></p>
+    <div class="inp">
+        <span class="zhuce">注册</span><span class="denlu"><a
+                href="file:///E:/leshishangcheng/乐视网/Signin.html">立即登录</a></span><br>
+        <span id="t1"> &nbsp;</span><br>
+        <input type="text" id="text1" placeholder="手机号"> <br>
+        <input type="password" placeholder="密码" id="psd"><br>
+        <input type="text" id="text2" placeholder="输入验证码 点击切换">
+        <span class="suiji" id="suiji"></span><span class="t2"></span><br>
+        <input type="text" id="text3" placeholder="6位验证码"><input type="button" value="获取验证码" id="text3-btn"
+            placeholder="6位验证码"> <br>
+        <input type="checkbox" name="" id="cbx"><span>我以阅读并同意</span>
+        <button id="btn">
+            <span>注</span>
+            <span>册</span>
+        </button>
+    </div>
+</body>
+
+</html>
+<script src="./js/common1.js"></script>
+<script>
+    // 随机验证码
+
+    let suiji = document.getElementsByClassName("suiji")[0]
+
+    suiji.onclick = function () {
+        suiji.innerHTML = random(1000, 9000);
+    }
+    var s;
+
+    function random(min, max) {
+        s = Math.round(Math.random() * (max - min) + min)
+        return s
+    }
+    suiji.innerHTML = random(1000, 9000);
+    //注册正则判断
+    let text1 = document.getElementById("text1");
+    let text2 = document.getElementById("text2");
+    let btn = document.getElementById("btn");
+    let t1 = document.getElementById("t1");
+    let t2 = document.getElementById("t2");
+    let cbx = document.getElementById("cbx");
+    let psd = document.getElementById("psd");
+
+    // text1.onfocus = function () {
+    //     let anr = /0?(13|14|15|17|18)[0-9]{9}/
+    //     let vle1 = anr.test(text1.value);
+    //     if (vle1 == true) {
+    //         t1.innerHTML = "请输入正确的手机号"
+    //         text1.style.border = "1px solid #ff0000"
+    //         t1.style.color = "#ff0000"
+    //     } else {}
+
+    // }
+    text1.onblur = function () {
+        let anr = /0?(13|14|15|17|18)[0-9]{9}/
+        let vle1 = anr.test(text1.value);
+        if (vle1 == true) {
+            t1.innerHTML = "ok"
+            text1.style.border = ""
+            t1.style.color = ""
+        } else if (vle1 == false) {
+            t1.innerHTML = "请输入正确的手机号"
+            text1.style.border = "1px solid #ff0000"
+            t1.style.color = "#ff0000"
+        }
+    }
+
+    psd.onblur = function () {
+        let anr1 = /\d\w{6,12}/
+        let vle2 = anr1.test(psd.value);
+        if (vle2 == true) {
+            t1.innerHTML = "ok"
+            psd.style.border = ""
+            t1.style.color = ""
+        } else if (vle2 == false) {
+            t1.innerHTML = "密码格式错误，密码格式为6-12位字母/数字/符号"
+            psd.style.border = "1px solid #ff0000"
+            t1.style.color = "#ff0000"
+        }
+    }
+    btn.onclick = function () {
+        var anr = /0?(13|14|15|17|18)[0-9]{9}/
+        var vle1 = anr.test(text1.value);
+        if (vle1 == true) {
+            t1.innerHTML = "ok";
+            text1.style.border = "";
+            t1.style.color = "";
+        } else if (vle1 == false) {
+            t1.innerHTML = "请输入正确的手机号"
+            text1.style.border = "1px solid #ff0000"
+            t1.style.color = "#ff0000"
+            return;
+        }
+        let anr1 = /\d\w{6,12}/
+        let vle2 = anr1.test(psd.value);
+        if (vle2 == true) {
+            t1.innerHTML = "ok"
+            psd.style.border = ""
+            t1.style.color = ""
+        } else if (vle2 == false) {
+            t1.innerHTML = "密码格式错误，密码格式为6-12位字母/数字/符号"
+            pad.style.border = "1px solid #ff0000"
+            t1.style.color = "#ff0000"
+        }
+        if (text2.value != s) {
+            alert("验证码错误")
+            return;
+        }
+        if (cbx.checked == false) {
+            alert("请阅读并同意注册")
+        } else {
+            alert("注册成功")
+        }
+        if(vle1 == true && vle2 == true){
+            alert("")
+           var json={
+               "name":vle1,
+               "mi":vle2
+            }
+            document.cookie="json="+JSON.stringify(json)
+        }
+    }
+</script>
