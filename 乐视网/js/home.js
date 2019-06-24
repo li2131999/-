@@ -1,10 +1,12 @@
-$(".Promotion-618").click(function(){
-   location.href="618.html"
+$(".Promotion-618").click(function () {
+   location.href = "618.html"
 })
 //搜素点击事件(焦点)
-$(".txt").focus(function(){
+$(".txt").focus(function () {
    $(".sousuo .ipt .txt-box").show()
 })
-$(".txt").blur(function(){
+$(".txt").blur(function () {
    $(".sousuo .ipt .txt-box").hide()
 })
+// 轮播图
+//选项卡
