@@ -1,0 +1,413 @@
+/* 清除默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+input {
+    outline: none;
+    font-weight: bold;
+}
+
+button {
+    border: 0;
+    outline: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+ 
+
+i {
+    font-style: normal;
+}
+
+/* 版心 */
+.core {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.Promotion-618 img {
+    width: 100%;
+}
+
+/* 头部 */
+.top-head {
+    width: 100%;
+    height: 32px;
+    background: #333;
+}
+
+.top-head li a {
+    font-size: 14px;
+}
+
+.top-head .top-left li {
+    float: left;
+    line-height: 32px;
+}
+
+.top-head .top-right li {
+    float: left;
+    line-height: 32px;
+}
+
+.top-head .top-right {
+    float: right;
+}
+
+/* 左边 */
+.top-head .denlu {
+    margin-left: 20px;
+}
+
+.top-head .top-left .zuce {
+    margin-left: 5px;
+}
+
+.top-head .denlu span {
+    color: #f2f2f2;
+}
+
+.top-head .top-left li:hover a {
+    color: #2884c7;
+}
+
+/* 右边 */
+.top-head .top-right li {
+    margin-left: 20px;
+}
+
+.top-head .top-right li:hover a {
+    color: #2884c7;
+}
+
+/* 鼠标滑过选项 */
+.top-head .top-right .hover1 .hover1-p {
+    position: absolute;
+    font-size: 14px;
+    display: none;
+    background: #f2f2f2;
+}
+
+.top-head .top-right .hover1:hover .hover1-p {
+    display: block;
+    color: #2884C7;
+}
+
+.top-head .top-right .hover1:hover {
+    background: #f2f2f2;
+}
+
+/* hover2 */
+.top-head .top-right .hover2 .hover2-p {
+    position: absolute;
+    display: none;
+    font-size: 14px;
+    background: #f2f2f2;
+    z-index: 0
+}
+
+.top-head .top-right .hover2:hover .hover2-p {
+    display: block;
+    color: #2884C7;
+}
+
+.top-head .top-right .hover2:hover {
+    background: #f2f2f2;
+}
+
+/* hover3 */
+.top-head .top-right .hover3 .hover3-p{
+    position: absolute;
+    display: none;
+    background: #f2f2f2;
+}
+
+.top-head .top-right .hover3:hover .hover3-p {
+    display: block;
+
+}
+
+/* 搜素 */
+.sousuo {
+    width: 100%;
+    height: 120px;
+}
+
+.sousuo .img {
+    width: 330px;
+    height: 120px;
+    float: left;
+    clear: both;
+}
+
+.sousuo .ipt .txt {
+    box-sizing: border-box;
+    float: left;
+    width: 446px;
+    height: 40px;
+    margin-top: 32px;
+    margin-left: 40px;
+    border: 2px solid #2884C7;
+    padding-left: 10px;
+    color: darkgrey;
+}
+
+.sousuo .ipt .btn {
+    float: left;
+    width: 134px;
+    height: 40px;
+    margin-top: 32px;
+    background: #2884C7;
+    border: 0;
+}
+
+.sousuo .gouwu {
+    width: 166px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid black;
+    float: right;
+    margin-top: 32px;
+    color: #2884c7;
+}
+
+.sousuo .gouwu:hover {
+    background: #2884C7;
+    color: #f2f2f2;
+}
+
+.sousuo .ipt {
+    position: relative;
+}
+
+.sousuo .ipt .txt-box {
+    box-sizing: border-box;
+    width: 444px;
+    height: 180px;
+    border: #cccccc 1px solid;
+    position: absolute;
+    top: 72px;
+    left: 370px;
+    display: none;
+    z-index: 1;
+    background: #ffffff;
+}
+
+
+.guide{
+    height: 40px;
+    margin-top: 20px;
+    line-height: 40px;
+    
+}
+.guide p{
+    float: left;
+    margin-right: 80px;
+    
+}
+.guide p a{
+    color: #000;
+}
+.guide .fl{
+    width: 196px;
+    height: 40px;
+    background: #000;
+    color: #ffffff;
+    text-align: center;
+}
+hr{
+    width: 100%;
+    border: 2px solid black;
+}
+
+/* 放大镜 */
+.details{
+    height: 568px;
+    margin-top: 20px;
+    position: relative;
+}
+.details .details-box{
+    width: 448px;
+    height: 448px;
+    background: aqua;
+    overflow: hidden;
+    position: relative;
+}
+.details .details-box img{
+    width: 448px;
+    height: 448px;
+}
+.details .details-box .mirror{
+    width: 200px;
+    height: 200px;
+    background:red;
+    position: absolute;
+    opacity: 0.5;
+     display:none;
+    z-index: 1;
+}
+.details .details-img{
+    width: 448px;
+    height: 90px;
+    background: #ffffff;
+    margin-top: 10px;
+}
+.details .details-img ul li {
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    background: #f2f2f2;
+    float: left;
+    margin-left: 4px;
+    margin-top: 9px;
+   
+}
+.details .details-img ul li img{
+    width: 68px;
+    height: 68px;
+}
+.details .details-box-2{
+    width: 448px;
+    height: 448px;
+    background: white;
+    position: absolute;
+    left: 609px;
+    top: 0;
+    display: none;
+    overflow: hidden;
+}
+.details .details-box-2 img{
+    width: 1300px;
+    height: 1300px;
+    position: absolute;
+}
+.details .details-img ul .li-border{
+    border: 1px solid red;
+}
+.details .details-img ul .left{
+    width: 35px;
+    height: 80px;
+    background: white;
+    float: left;
+    margin-top: 9px;
+    background: url(../img-details/zy.jpg) no-repeat 0 20px;
+}
+.details .details-img ul .right{
+    width: 35px;
+    height: 80px;
+    background:white;
+    float:right;
+    margin-top: 9px;
+    background: url(../img-details/zy.jpg) no-repeat -45px 20px;
+}
+.picture{
+    width: 448px;
+    float: left;
+}
+.introduce{
+    float: left;
+    margin-left: 30px;
+}
+.introduce .Price{
+    width: 720px;
+    height: 85px;
+    line-height: 36px;
+    margin-top: 10px;
+    background:  #f2f2f2;
+    
+}
+
+
+
+.introduce h3{
+    margin-bottom:10px; 
+}
+
+
+
+.introduce .Price .dj{
+    margin-left: 20px;
+    color: red;
+}
+.introduce .Price .pj{
+    margin-left: 400px;
+    font-size: 14px;
+}
+.introduce .Price .zj{
+    color: #ffffff;
+    background: red;
+    margin-left:20px ;
+}
+.introduce .Price .zja{
+    margin-left: 20px;
+    color: #999999
+}
+.introduce .nmr{
+    width: 720px;
+    height: 42px;
+    line-height: 42px;
+}
+.introduce .nmr a{
+    display: inline-block;
+    width: 20px;
+    height: 42px;
+    color: #000;
+    font-size: 20px;
+}
+.introduce .nmr input{
+    text-align: center;
+    width: 30px;
+    border: 0;
+}
+.introduce .nmr .sl{
+    display: inline-block;
+    margin-right: 30px;
+    float: left;
+}
+.introduce .nmr .hz{
+    width: 105px;
+    border: 1px solid #999999;
+}
+.introduce .total{
+    height: 50px;
+    line-height: 50px;
+    background:  #f2f2f2;
+}
+.introduce .total p{
+    float: left;
+    
+}
+.introduce .total .qian{
+    margin-left: 30px;
+    color: red;
+}
+.introduce .total .btn{
+    width: 150px;
+    height: 50px;
+    background: red;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 300px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.introduce .total .btn:hover{
+    background: #cc0000;
+}
+

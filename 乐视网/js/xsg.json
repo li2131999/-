@@ -1,0 +1,49 @@
+{
+	"classify001":{
+		"name" : "限时购",
+		"xsg" : [
+			{
+				"id" : "xsg001",
+				"name" : "山水智能遥控塔扇（触摸款） STF-19",
+				"src" : "./img/xsg-1.jpeg",
+                "price" : "299",
+                "price2" : "299",
+                "btn":"立即购买"
+            },
+            {
+				"id" : "xsg002",
+				"name" : "卓晨 C-101吸黑头仪",
+				"src" : "./img/xsg-2.jpeg",
+                "price" : "299",
+                "price2" : "299",
+                "btn":"立即购买"
+            },
+            {
+				"id" : "xsg003",
+				"name" : "山水智能遥控塔扇（触摸款） STF-19",
+				"src" : "./img/xsg-3.jpg",
+                "price" : "299",
+                "price2" : "299",
+                "btn":"立即购买"
+            },
+            {
+				"id" : "xsg004",
+				"name" : "山水智能遥控塔扇（触摸款） STF-19",
+				"src" : "./img/xsg-4.jpg",
+                "price" : "299",
+                "price2" : "299",
+                "btn":"立即购买"
+            },
+            {
+				"id" : "xsg005",
+				"name" : "山水智能遥控塔扇（触摸款） STF-19",
+				"src" : "./img/xsg-5.jpg",
+                "price" : "299",
+                "price2" : "299",
+                "btn":"立即购买"
+			}
+			
+			
+		]
+    }
+}

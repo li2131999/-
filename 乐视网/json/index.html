@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery-1.11.1.js"></script>
+</head>
+
+<body>
+    <ul id="ul">
+
+    </ul>
+</body>
+
+</html>
+<script>
+    $.ajax({
+        type: "get",
+        url: "details.json",
+        success: function (res) {
+            console.log(res)
+            var str = "";
+            
+                str +=
+                    `<li>
+                    <p><img src=${res.src}></p>
+                    <strong>${res.name}</strong>
+                    <span class="qian">${res.price}</span><s class="hd">${res.price2}</s><br>
+                   
+                    </li>`
+            
+            $("#ul").html(str);
+        }
+
+    })
+</script>

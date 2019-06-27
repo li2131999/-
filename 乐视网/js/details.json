@@ -1,0 +1,36 @@
+{
+	"classify001":{
+		"name" : "限时购",
+		"xqy" : [
+			{
+				"id" : "xsg004",
+				"name" : "首页 >山水智能遥控塔扇（触摸款） STF-1946R",
+                "src" : "./img-details/t1.jpg",
+                "src1" : "./img-details/t2.jpg",
+                "src2" : "./img-details/t3.jpg",
+                "src3" : "./img-details/t4.jpg",
+                "src4" : "./img-details/t5.jpg",
+                "nameh3":"山水智能遥控塔扇（触摸款） STF-1946R",
+                "namei":"带LED显示及温度显示,12小时的定时功能,三挡风速可调,远距离遥控,节省空间!大塔扇,清爽风",
+                "dj":"￥499",
+                "zja":"￥299.00",
+                "qian":"499.00"
+            },
+            {
+				"id" : "xsg002",
+				"name" : "首页 >山水智能遥控塔扇（触摸款） STF-1946R",
+                "src" : "./img-details/t1.jpg",
+                "src1" : "./img-details/t2.jpg",
+                "src2" : "./img-details/t3.jpg",
+                "src3" : "./img-details/t4.jpg",
+                "src4" : "./img-details/t5.jpg",
+                "nameh3":"山水智能遥控塔扇（触摸款） STF-1946R",
+                "namei":"带LED显示及温度显示,12小时的定时功能,三挡风速可调,远距离遥控,节省空间!大塔扇,清爽风",
+                "dj":"￥00",
+                "zja":"￥00.00",
+                "qian":"499.00"
+            }
+            
+		]
+    }
+}
