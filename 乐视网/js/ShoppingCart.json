@@ -1,0 +1,29 @@
+{
+    "cnxh":[
+        {
+            
+			"id" : "cnxh001",
+			"name" : "乐视Type-c快速电源适配器 24W",
+			"src" : "./img-details/cnxh1.jpg",
+            "price" : "89.00"
+            
+        },
+        {
+            
+			"id" : "cnxh002",
+			"name" : "乐视指环支架 玫瑰金",
+			"src" : "./img-details/cnxh2.jpg",
+            "price" : "49.00"
+            
+        },
+        {
+            
+			"id" : "cnxh003",
+			"name" : "旋转壁挂支架LS050NN2P",
+			"src" : "./img-details/cnxh3.jpg",
+            "price" : "119.00"
+            
+        }
+
+    ]
+}

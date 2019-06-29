@@ -41,13 +41,13 @@ deff.done(function (json) {
    for(var attr in json){
    for (var i in json[attr].xsg) {
       var pro = json[attr].xsg[i];
-      console.log(pro);  
+      // console.log(pro);  
       strCon +=
                `<li><a href="http://127.0.0.1/leshishangcheng/%E4%B9%90%E8%A7%86%E7%BD%91/details.html?pid=${pro.id}">
                     <p><img src=${pro.src}></p>
                     <strong style="color: black">${pro.name}</strong>
                     <span class="qian">￥${pro.price}</span><s class="hd">￥${pro.price2}</s><br>
-                    <button>${pro.btn}</button>
+                    <button><a href="http://127.0.0.1/leshishangcheng/%E4%B9%90%E8%A7%86%E7%BD%91/ShoppingCart.html">${pro.btn}</a></button>
                
                </a></li>`
    }

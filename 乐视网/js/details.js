@@ -5,14 +5,18 @@ var deff = $.ajax({
     async: true,
 });
 deff.done(function (json) {
+    var str = location.href;
+    str = str.split("?")[1];
+    var pid = str.split("=")[1];
     var strCon = "";
-    var str="";
+    var strCon2 = "";
     for (var attr in json) {
         for (var i in json[attr].xqy) {
             var pro = json[attr].xqy[i];
-            console.log(pro);
-            strCon =
-                `<div class="picture">
+            // console.log(pro.id);
+            if (pro.id == pid) {
+                strCon =
+                    `<div class="picture">
             <div class="details-box">
                  <p class="mirror"></p>
                 <img src=${pro.src}>
@@ -40,8 +44,8 @@ deff.done(function (json) {
                 <img src=${pro.src4}> 
             </div>
         </div>`
-        strCon2=
-        `<h3>${pro.nameh3}</h3>
+                strCon2 =
+                    `<h3>${pro.nameh3}</h3>
         <i>${pro.namei}</i>
         <div class="Price">
             <span class="jg">价 &nbsp;&nbsp; 格</span> <i class="dj">${pro.dj}</i> <span
@@ -59,6 +63,9 @@ deff.done(function (json) {
             <p class="qian">${pro.qian}</p>
             <button class="btn">加入购物车</button>
         </div>`
+           }
+
+
         }
     }
     $(".details .picture").html(strCon);
@@ -115,14 +122,14 @@ deff.done(function (json) {
         y = y <= 0 ? 0 : y >= tp ? tp : y;
 
         $mirror.css({
-            "left": x ,
+            "left": x,
             "top": y
         })
         var bigImageX = -x * $boximg2.width() / $box1.width();
         var bigImageY = -y * $boximg2.height() / $box1.height();
         $boximg2.css({
             "left": bigImageX,
-            "top": bigImageY 
+            "top": bigImageY
 
         });
 
@@ -131,47 +138,66 @@ deff.done(function (json) {
 
 
     //数量增加减少
-var $jian = $(".introduce .nmr .jian")
-var $jia = $(".introduce .nmr .jia")
-var $ipt = $(".introduce .nmr input")
-var $qian = $(".introduce .qian")
-$jian.click(function () {
-    $ipt.val($ipt.val() * 1 - 1)
-    if ($ipt.val() <= 1) {
-        alert("此商品小于商品够买最小数量")
-        $ipt.val(1)
-    }
-    $qian.text($qian.text(i) - 499)
-})
-$jia.click(function () {
-    $ipt.val($ipt.val() * 1 + 1)
-    var i = $qian.text() * 1 + $qian.text() * 1
-    $qian.text(i)
-})
-
-})
-
-
-
-
-var str = location.href;
-    str = str.split("?")[1];
-var pid = str.split("=")[1];
-    var str1 = ""
-    $.ajax({
-        "type" : "get",
-        "url"  : "js/details.json",
-        "success" : function(res){
-            for(var i = 0 ; i < res.length;i++){
-                if(res[i].id == pid){
-                    str1 += `<p class="mirror"></p>
-                    <img src=${pro.src}>
-                    <img src=${pro.src1}>
-                    <img src=${pro.src2}>
-                    <img src=${pro.src3}>
-                    <img src=${pro.src4}>`
-                }
-            }
-            $(".details .picture").html(strCon);
+    var $jian = $(".introduce .nmr .jian")
+    var $jia = $(".introduce .nmr .jia")
+    var $ipt = $(".introduce .nmr input")
+    var $qian = $(".introduce .qian")
+    $jian.click(function () {
+        $ipt.val($ipt.val() * 1 - 1)
+        if ($ipt.val() <= 1) {
+            alert("此商品小于商品够买最小数量")
+            $ipt.val(1)
         }
+        $qian.text($qian.text(i) - 499)
     })
+    $jia.click(function () {
+        $ipt.val($ipt.val() * 1 + 1)
+        var i = $qian.text() * 1 + $qian.text() * 1
+        $qian.text(i)
+    })
+
+
+
+
+
+
+
+    $(".introduce .total .btn").click(function(){
+        var jon={};
+        var arr=[];
+        jon={
+            "id":pid
+
+        }
+        console.log(pid);
+        
+    })
+
+})
+
+
+
+
+// var str = location.href;
+//     str = str.split("?")[1];
+// var pid = str.split("=")[1];
+//     var str1 = ""
+//     $.ajax({
+//         "type" : "get",
+//         "url"  : "js/details.json",
+//         "success" : function(res){
+//             for(var i = 0 ; i < res.length;i++){
+//                 console.log(res[i].id)
+//                 if(res[i].id == pid){
+//                     str1 += `<p class="mirror"></p>
+//                     <img src=${pro.src}>
+//                     <img src=${pro.src1}>
+//                     <img src=${pro.src2}>
+//                     <img src=${pro.src3}>
+//                     <img src=${pro.src4}>`
+//                 }
+//             }
+//             $(".details .picture").html(strCon);
+//             $(".details .introduce").html(strCon2);
+//         }
+//     })

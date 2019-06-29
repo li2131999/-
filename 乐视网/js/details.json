@@ -3,7 +3,7 @@
 		"name" : "限时购",
 		"xqy" : [
 			{
-				"id" : "xsg004",
+				"id" : "xsg001",
 				"name" : "首页 >山水智能遥控塔扇（触摸款） STF-1946R",
                 "src" : "./img-details/t1.jpg",
                 "src1" : "./img-details/t2.jpg",
@@ -19,18 +19,59 @@
             {
 				"id" : "xsg002",
 				"name" : "首页 >山水智能遥控塔扇（触摸款） STF-1946R",
-                "src" : "./img-details/t1.jpg",
-                "src1" : "./img-details/t2.jpg",
-                "src2" : "./img-details/t3.jpg",
-                "src3" : "./img-details/t4.jpg",
-                "src4" : "./img-details/t5.jpg",
-                "nameh3":"山水智能遥控塔扇（触摸款） STF-1946R",
-                "namei":"带LED显示及温度显示,12小时的定时功能,三挡风速可调,远距离遥控,节省空间!大塔扇,清爽风",
-                "dj":"￥00",
-                "zja":"￥00.00",
-                "qian":"499.00"
+                "src" : "./img-details/a1.jpg",
+                "src1" : "./img-details/a1.jpg",
+                "src2" : "./img-details/a1.jpg",
+                "src3" : "./img-details/a1.jpg",
+                "src4" : "./img-details/a1.jpg",
+                "nameh3":"卓晨 C-101吸黑头仪",
+                "namei":"收缩毛孔去粉刺黑头清洁器",
+                "dj":"￥138",
+                "zja":"￥89.00",
+                "qian":"138.00"
+            },
+            {
+				"id" : "xsg003",
+				"name" : "首页 >山水智能遥控塔扇（触摸款） STF-1946R",
+                "src" : "./img-details/a2.jpg",
+                "src1" : "./img-details/a2.jpg",
+                "src2" : "./img-details/a2.jpg",
+                "src3" : "./img-details/a2.jpg",
+                "src4" : "./img-details/a2.jpg",
+                "nameh3":"赛普瑞斯蓝宝石系列不粘锅套组",
+                "namei":"赛普瑞斯蓝宝石系列不粘锅套组",
+                "dj":"￥138",
+                "zja":"￥89.00",
+                "qian":"138.00"
+            },
+            {
+				"id" : "xsg004",
+				"name" : "首页 >山水智能遥控塔扇（触摸款） STF-1946R",
+                "src" : "./img-details/a3-1.jpg",
+                "src1" : "./img-details/a3-2.jpg",
+                "src2" : "./img-details/a3-3.jpg",
+                "src3" : "./img-details/a3-4.jpg",
+                "src4" : "./img-details/a3-5.jpg",
+                "nameh3":"山水 家用电动绞肉机 搅馅机2升JRJ-092",
+                "namei":"2L大容量 不锈钢机头，双层四叶钨钢耐磨刀，快慢两档,超静音纯铜电机",
+                "dj":"￥138",
+                "zja":"￥89.00",
+                "qian":"138.00"
+            },
+            {
+				"id" : "xsg005",
+				"name" : "首页 >山水智能遥控塔扇（触摸款） STF-1946R",
+                "src" : "./img-details/a4-1.jpg",
+                "src1" : "./img-details/a4-2.jpg",
+                "src2" : "./img-details/a4-3.jpg",
+                "src3" : "./img-details/a4-4.jpg",
+                "src4" : "./img-details/a4-5.jpg",
+                "nameh3":"山水便携充电摇摇乐果汁机双开口钢盖SH-A1",
+                "namei":"不锈钢杯盖，高硼硅条纹玻璃杯，四叶刀片",
+                "dj":"￥138",
+                "zja":"￥89.00",
+                "qian":"138.00"
             }
-            
 		]
     }
 }

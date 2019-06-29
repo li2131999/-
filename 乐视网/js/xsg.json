@@ -5,40 +5,40 @@
 			{
 				"id" : "xsg001",
 				"name" : "山水智能遥控塔扇（触摸款） STF-19",
-				"src" : "./img/xsg-1.jpeg",
+				"src" : "./img/xsg-4.jpg",
                 "price" : "299",
-                "price2" : "299",
+                "price2" : "499",
                 "btn":"立即购买"
             },
             {
 				"id" : "xsg002",
 				"name" : "卓晨 C-101吸黑头仪",
-				"src" : "./img/xsg-2.jpeg",
-                "price" : "299",
-                "price2" : "299",
+				"src" : "./img/xsg-6.jpg",
+                "price" : "89",
+                "price2" : "138",
                 "btn":"立即购买"
             },
             {
 				"id" : "xsg003",
-				"name" : "山水智能遥控塔扇（触摸款） STF-19",
-				"src" : "./img/xsg-3.jpg",
-                "price" : "299",
-                "price2" : "299",
+				"name" : "赛普瑞斯蓝宝石系列不粘锅套组",
+				"src" : "./img/xsg-7.png",
+                "price" : "399",
+                "price2" : "999",
                 "btn":"立即购买"
             },
             {
 				"id" : "xsg004",
 				"name" : "山水智能遥控塔扇（触摸款） STF-19",
-				"src" : "./img/xsg-4.jpg",
-                "price" : "299",
-                "price2" : "299",
+				"src" : "./img/xsg-5.jpg",
+                "price" : "109",
+                "price2" : "128",
                 "btn":"立即购买"
             },
             {
 				"id" : "xsg005",
-				"name" : "山水智能遥控塔扇（触摸款） STF-19",
-				"src" : "./img/xsg-5.jpg",
-                "price" : "299",
+				"name" : "山水便携充电摇摇乐果汁机双开口钢盖SH-A1",
+				"src" : "./img/xsg-7.jpg",
+                "price" : "199",
                 "price2" : "299",
                 "btn":"立即购买"
 			}
